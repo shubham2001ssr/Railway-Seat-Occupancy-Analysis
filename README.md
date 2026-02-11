@@ -11,6 +11,7 @@ The project demonstrates a full-stack data analysis workflow:
 3.  **Visualization**:
     - Interactive **Streamlit Dashboard** for real-time exploration.
     - Static **Seaborn/Matplotlib** heatmaps and charts for reporting.
+    - **Power BI Integration**: Ready-to-use dataset for building advanced business intelligence reports.
 
 ## 📂 Directory Structure
 ```
@@ -20,6 +21,7 @@ The project demonstrates a full-stack data analysis workflow:
 ├── notebooks/              # Jupyter Notebooks
 │   ├── analysis.ipynb      # Python-based analysis
 │   └── sql_analysis.ipynb  # SQL-based analysis
+├── reports/                # Power BI / Tableau Reports
 ├── scripts/                # Utility Scripts
 │   ├── generate_data.py    # Data generation script
 │   └── to_sql.py           # ETL script (CSV -> SQL)
@@ -31,7 +33,9 @@ The project demonstrates a full-stack data analysis workflow:
 -   **Language**: Python 3.8+
 -   **Libraries**: Pandas, NumPy, Seaborn, Matplotlib, Streamlit
 -   **Database**: SQLite3
+-   **BI Tools**: Power BI (Compatible)
 -   **Tools**: Jupyter Notebook, VS Code
+
 
 ## 🚀 Setup & How to Run
 
@@ -76,3 +80,15 @@ Open `notebooks/analysis.ipynb` or `notebooks/sql_analysis.ipynb` in Jupyter Not
 -   **Seat Occupancy Heatmap**: Visualizes which coaches (e.g., S1 vs AC1) have the highest density.
 -   **Quota Analysis**: Breakdown of bookings by General, Tatkal, Ladies, etc.
 -   **Weekend Trends**: Bar charts confirming higher occupancy on weekends.
+
+## 📊 Power BI Integration
+To take this project to the next level, you can connect **Power BI** to the dataset to build enterprise-grade dashboards.
+
+1.  **Open Power BI Desktop**.
+2.  Click **Get Data** -> **Text/CSV**.
+3.  Navigate to the `data/` folder and select `railway_booking_data.csv`.
+4.  Click **Load**.
+5.  **Recommended Visualizations**:
+    -   **Map**: Plot stations to see geographical demand.
+    -   **matrix**: Show `Source` vs `Destination` with `OccupancyRate` as values.
+    -   **Slicers**: Add filters for `Date`, `Train_Type`, and `Class` to enable dynamic analysis.
